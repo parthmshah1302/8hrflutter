@@ -1,6 +1,7 @@
 // Learnings from day 1
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'pages/home_page.dart';
 import 'pages/login_page.dart';
@@ -21,6 +22,7 @@ class Parth extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         fontFamily: 'Telegraf',
       ),
+      // debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
         brightness: Brightness.light,
         primarySwatch: Colors.red,
@@ -28,8 +30,8 @@ class Parth extends StatelessWidget {
       initialRoute: "/",
       routes: {
         "/": (context) => LoginPage(),
-        '/home': (context) => HomePage(),
-        "/login": (context) => LoginPage(),
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
