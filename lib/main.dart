@@ -22,12 +22,12 @@ class Parth extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         fontFamily: 'Telegraf',
       ),
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       darkTheme: ThemeData(
         brightness: Brightness.light,
         primarySwatch: Colors.red,
       ),
-      initialRoute: "/",
+      initialRoute: "/home",
       routes: {
         "/": (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
